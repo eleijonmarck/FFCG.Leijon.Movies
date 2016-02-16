@@ -4,13 +4,13 @@ namespace FFCG.Leijon.Movies.Core
 {
     public class Movie
     {
-        public string Name { get; private set; }
         public Guid Id { get; private set;}
+        public string Name { get; private set; }
 
-        public Movie(string name, Guid id)
+        public Movie(Guid id, string name)
         {
-            Name = name;
             Id = id;
+            Name = name;
         }
     }
 }

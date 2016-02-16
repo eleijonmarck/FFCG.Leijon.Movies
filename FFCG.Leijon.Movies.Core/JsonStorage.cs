@@ -10,10 +10,12 @@ namespace FFCG.Leijon.Movies.Core
 {
     public class JsonStorage : IStorage
     {
+        private static string FilePath => "storage.txt";
+        private static bool StorageExists => File.Exists(FilePath);
         public JsonStorage()
         {
-            var movie = new Movie("test",Guid.NewGuid());
-            this.Add(movie);
+            if(!StorageExists)
+                Save(new List<Movie>());
         }
 
         public IEnumerable<Movie> GetAll()
@@ -22,6 +24,11 @@ namespace FFCG.Leijon.Movies.Core
             return (IEnumerable<Movie>)JsonConvert.DeserializeObject(text);
         }
         //File.ReadAllText(Path.GetDirectoryName("."))
+
+        private static void Save(IEnumerable<Movie> movies)
+        {
+           File.WriteAllText(FilePath,JsonConvert.SerializeObject(movies)); 
+        }
 
         public void Add(Movie movie)
         {

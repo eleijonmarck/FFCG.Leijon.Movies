@@ -4,16 +4,17 @@ namespace FFCG.Leijon.Movies.Core
 {
     public class MovieCollection
     {
-        public readonly IStorage Storage;
+        private readonly IStorage _storage;
+        public IEnumerable<Movie> Movies => _storage.GetAll();
 
         public MovieCollection(IStorage storage)
         {
-            Storage = storage;
+            _storage = storage;
         }
 
         public void AddMovie(Movie movie)
         {
-            Storage.Add(movie);
+            _storage.Add(movie);
         }
     }
 }
