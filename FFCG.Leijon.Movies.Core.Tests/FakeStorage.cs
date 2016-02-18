@@ -10,7 +10,17 @@ namespace FFCG.Leijon.Movies.Core.Tests
             throw new System.NotImplementedException();
         }
 
-        public IEnumerable<Movie> Add()
+        public void Add(Movie movie)
+        {
+            throw new System.NotImplementedException();
+        }
+
+        public void Remove(Movie movie)
+        {
+            throw new System.NotImplementedException();
+        }
+
+        public void Update(Movie movie)
         {
             throw new System.NotImplementedException();
         }
