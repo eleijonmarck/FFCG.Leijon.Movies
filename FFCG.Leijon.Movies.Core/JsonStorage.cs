@@ -10,8 +10,9 @@ namespace FFCG.Leijon.Movies.Core
 {
     public class JsonStorage : IStorage
     {
-        private static string FilePath => "storage.txt";
         private static bool StorageExists => File.Exists(FilePath);
+        private static string FilePath => @"C:\Users\eric.leijonmarck\dev\work\FFCG.Leijon.Movies\storage.txt";
+
         public JsonStorage()
         {
             if(!StorageExists)
@@ -20,10 +21,8 @@ namespace FFCG.Leijon.Movies.Core
 
         public IEnumerable<Movie> GetAll()
         {
-            var text = File.ReadAllText(@"C:\Users\eric.leijonmarck\dev\work\FFCG.Leijon.Movies.Core\lol.txt");
-            return (IEnumerable<Movie>)JsonConvert.DeserializeObject(text);
+            return JsonConvert.DeserializeObject<IEnumerable<Movie>>(File.ReadAllText(FilePath));
         }
-        //File.ReadAllText(Path.GetDirectoryName("."))
 
         private static void Save(IEnumerable<Movie> movies)
         {
@@ -32,10 +31,12 @@ namespace FFCG.Leijon.Movies.Core
 
         public void Add(Movie movie)
         {
-            var text = File.ReadAllText(@"C:\Users\eric.leijonmarck\dev\work\FFCG.Leijon.Movies.Core\lol.txt");
-            var movies = (List<Movie>)JsonConvert.DeserializeObject(text);
-            movies.Add(movie);
-            File.WriteAllText(@"C:\Users\eric.leijonmarck\dev\work\FFCG.Leijon.Movies.Core\lol.txt",JsonConvert.SerializeObject(movies));
+            var movies = GetAll().ToList();
+            if (!movies.Contains(movie))
+            {
+                movies.Add(movie);
+                Save(movies);
+            }
         }
 
         public void Remove(Movie movie)
@@ -43,7 +44,7 @@ namespace FFCG.Leijon.Movies.Core
             throw new NotImplementedException();
         }
 
-        Movie IStorage.Get(Movie movie)
+        public void Update(Movie movie)
         {
             throw new NotImplementedException();
         }
