@@ -1,13 +1,7 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Data.Entity.Core.Mapping;
+﻿using System.Collections.Generic;
 using System.Linq;
-using System.Net;
-using System.Net.Http;
 using System.Web.Http;
-using System.Web.Mvc.Html;
 using FFCG.Leijon.Movies.Core;
-using Newtonsoft.Json;
 
 namespace FFCG.Leijon.Movies.WebApi.Controllers
 {
@@ -20,7 +14,7 @@ namespace FFCG.Leijon.Movies.WebApi.Controllers
         }
 
         // GET api/values/5
-        public Movie Get(Guid id)
+        public Movie Get(int id)
         {
             var movie = MovieStorage.Collection.Movies.FirstOrDefault(x => x.Id == id);
             return movie;
@@ -35,7 +29,7 @@ namespace FFCG.Leijon.Movies.WebApi.Controllers
 
     public class CreateMovie
     {
-        public Guid Id { get; set; }
+        public int Id { get; set; }
         public string Name { get; set; }
     }
 }

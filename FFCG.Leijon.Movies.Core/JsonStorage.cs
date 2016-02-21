@@ -11,7 +11,7 @@ namespace FFCG.Leijon.Movies.Core
     public class JsonStorage : IStorage
     {
         private static bool StorageExists => File.Exists(FilePath);
-        private static string FilePath => @"C:\Users\eric.leijonmarck\dev\work\FFCG.Leijon.Movies\storage.txt";
+        private static string FilePath => "storage.txt";
 
         public JsonStorage()
         {
