@@ -1,5 +1,5 @@
 # FFCG.Leijon.Movies
-<img align="right" style="height:90px;width:140px" src="mce7_lg.jpg">
+<img align="right" class="img-responsive" src="mce7_lg.jpg">
 
 Composable.Monolithic is a framework for [Composability](https://en.wikipedia.org/wiki/Composability) in Software Development available for .NET.
 
@@ -7,22 +7,32 @@ Current version is 1.0, released in 2014.
 
 [TOC]
 
-## Installation
+## Overview
+* [Use Case](doc/md/usage.md) — Overview of the projects use case and why it's being done.
+* [Project Plan](doc/md/projectplan.md) - Projectplan with relevant material
+* [Trello](https://trello.com/b/wzRKEJoC/moviecollector) - A great way to use cards to imply responsibility for an Agile Development
+* [FAQ](faq.html) — Questions and Answers that can be worth to investigate.
 
-Git clone into your homedirectory via Powershell.
+## Research-markdowns
 
-    cd ~
-    cd ..
-    git clone https://github.com/mlidbom/Composable.Monolithic
+* [imdb](doc/imdb.md) - Research and information about imdb api
+* [recommender-systems](doc/recommender.md) - Recommendation sustems and what to use
 
-Once cloned to a directory, open the project and Build the solution (Ctrl + Shift + B).
+## Related Projects and Resources
 
-> If this does not work you need to put the directory directly into your C: `cd C:\`, since windows does not allow strings longer than 260 Char (windows, please fix). See FAQ.
+Here we can list related projects and resources to this project.
 
-___
-Thereafter you need to create a subdirectory to the Framework, called NuGetFeed. Here we will put the [pakets](https://fsprojects.github.io/Paket/) for NuGet.
+* [Developers Guide for new Recruits at Manpower](http://devteam-wiki.mpsedev.local/) - Need to have account to get into the link
 
-    cd C:\
-    mkdir NuGetFeed
+## Tool Stack
+ * [Balsamic](https://balsamiq.com/) - Sketching up wireframes
+ * [Resharper](https://www.jetbrains.com/resharper/?gclid=CNzVhbjPtcoCFWXecgod_0wGWQ&gclsrc=aw.ds) - Tool for Visual Studio to help with development
 
-Now we can run the package script `C:\Composable.Monolith\.buildpaket.ps1`
+## Tech Stack
+
+### Frontend
+* ** Typescript + Angular **
+
+### Backend
+* [** Neo4J**](http://neo4j.com/)
+* **C#**
