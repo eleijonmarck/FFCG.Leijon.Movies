@@ -1,5 +1,4 @@
-﻿using System;
-using FFCG.Leijon.Movies.Core;
+﻿using FFCG.Leijon.Movies.Core;
 
 namespace FFCG.Leijon.Movies.WebApi.Controllers
 {

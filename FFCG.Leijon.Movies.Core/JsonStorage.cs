@@ -1,18 +1,12 @@
-﻿using System;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using System.IO;
 using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using Newtonsoft.Json;
 
 namespace FFCG.Leijon.Movies.Core
 {
     public class JsonStorage : IStorage
     {
-        private static bool StorageExists => File.Exists(FilePath);
-        private static string FilePath => "storage.txt";
-
         public JsonStorage()
         {
             if(!StorageExists)
@@ -22,11 +16,6 @@ namespace FFCG.Leijon.Movies.Core
         public IEnumerable<Movie> GetAll()
         {
             return JsonConvert.DeserializeObject<IEnumerable<Movie>>(File.ReadAllText(FilePath));
-        }
-
-        private static void Save(IEnumerable<Movie> movies)
-        {
-           File.WriteAllText(FilePath,JsonConvert.SerializeObject(movies)); 
         }
 
         public void Add(Movie movie)
@@ -39,14 +28,15 @@ namespace FFCG.Leijon.Movies.Core
             }
         }
 
-        public void Remove(Movie movie)
-        {
-            throw new NotImplementedException();
-        }
+        private static bool StorageExists => File.Exists(FilePath);
 
-        public void Update(Movie movie)
+        //private static string FilePath => "storage.txt";
+        private static string FilePath => @"C:\Users\eric.leijonmarck\dev\work\FFCG.Leijon.Movies\storage.txt";
+
+
+        private static void Save(IEnumerable<Movie> movies)
         {
-            throw new NotImplementedException();
+           File.WriteAllText(FilePath,JsonConvert.SerializeObject(movies)); 
         }
     }
 }

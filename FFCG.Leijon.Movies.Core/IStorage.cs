@@ -7,7 +7,5 @@ namespace FFCG.Leijon.Movies.Core
     {
         IEnumerable<Movie> GetAll();
         void Add(Movie movie);
-        void Remove(Movie movie);
-        void Update(Movie movie);
     }
 }
