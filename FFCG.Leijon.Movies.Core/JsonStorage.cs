@@ -38,5 +38,25 @@ namespace FFCG.Leijon.Movies.Core
         {
            File.WriteAllText(FilePath,JsonConvert.SerializeObject(movies)); 
         }
+
+        public T Load<T>(object id)
+        {
+            throw new System.NotImplementedException();
+        }
+
+        public void Store(object obj)
+        {
+            throw new System.NotImplementedException();
+        }
+
+        public IEnumerable<T> All<T>()
+        {
+            throw new System.NotImplementedException();
+        }
+
+        public void Delete(object obj)
+        {
+            throw new System.NotImplementedException();
+        }
     }
 }

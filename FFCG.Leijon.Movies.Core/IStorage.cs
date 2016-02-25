@@ -5,7 +5,9 @@ namespace FFCG.Leijon.Movies.Core
 {
     public interface IStorage
     {
-        IEnumerable<Movie> GetAll();
-        void Add(Movie movie);
+        T Load<T>(object id);
+        void Store(object obj);
+        IEnumerable<T> All<T>();
+        void Delete(object obj);
     }
 }
