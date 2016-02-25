@@ -59,4 +59,3 @@ namespace FFCG.Leijon.Movies.Core
             throw new System.NotImplementedException();
         }
     }
-}
