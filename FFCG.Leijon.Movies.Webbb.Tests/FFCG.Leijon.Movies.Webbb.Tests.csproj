@@ -96,6 +96,15 @@
   <ItemGroup>
     <Content Include="App.config" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\FFCG.Leijon.Movies.Webbb\FFCG.Leijon.Movies.Webbb.csproj">
+      <Project>{C4037ACC-28FA-46B8-8D16-09E8C26D7062}</Project>
+      <Name>FFCG.Leijon.Movies.Webbb</Name>
+    </ProjectReference>
+  </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it.
        Other similar extension points exist, see Microsoft.Common.targets.
