@@ -7,14 +7,16 @@ using NUnit.Framework;
 
 namespace FFCG.Leijon.Movies.Core.Tests
 {
+    [Ignore("Integration tests")]
     [TestFixture]
     public class JsonStorageTests
     {
+        private JsonStorage _storage;
 
         [SetUp]
         public void SetUp()
         {
-            var storage = new FakeStorage();
+            _storage = new JsonStorage();
         }
 
         [Test]

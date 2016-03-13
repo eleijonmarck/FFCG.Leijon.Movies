@@ -9,7 +9,7 @@ namespace FFCG.Leijon.Movies.Core
     {
         public JsonStorage()
         {
-            if(!StorageExists)
+            if (!StorageExists)
                 Save(new List<Movie>());
         }
 
@@ -36,7 +36,7 @@ namespace FFCG.Leijon.Movies.Core
 
         private static void Save(IEnumerable<Movie> movies)
         {
-           File.WriteAllText(FilePath,JsonConvert.SerializeObject(movies)); 
+            File.WriteAllText(FilePath, JsonConvert.SerializeObject(movies));
         }
 
         public T Load<T>(object id)
@@ -59,3 +59,4 @@ namespace FFCG.Leijon.Movies.Core
             throw new System.NotImplementedException();
         }
     }
+}
