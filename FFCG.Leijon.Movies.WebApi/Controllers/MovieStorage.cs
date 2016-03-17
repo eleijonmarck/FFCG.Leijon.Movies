@@ -4,7 +4,7 @@ namespace FFCG.Leijon.Movies.WebApi.Controllers
 {
     public static class MovieStorage
     {
-        public static MovieCollection Collection = new MovieCollection(new JsonStorage());
+        public static MovieCollection Collection = new MovieCollection(new FileStorage(@"C:\Temp\Movies.API"));
 
         static MovieStorage()
         {

@@ -10,7 +10,7 @@ namespace FFCG.Leijon.Movies.WebApi.Controllers
         // GET api/values
         public IEnumerable<Movie> Get()
         {
-            return MovieStorage.Collection.Movies;
+            return MovieStorage.Collection.Movies.OrderByDescending(x => x.Popularity);
         }
 
         // GET api/values/5
