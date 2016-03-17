@@ -1,7 +1,0 @@
-C:\Users\eric.leijonmarck\dev\work\FFCG.Leijon.Movies\FFCG.Leijon.Movies.Core\obj\Debug\FFCG.Leijon.Movies.Core.csprojResolveAssemblyReference.cache
-C:\Users\eric.leijonmarck\dev\work\FFCG.Leijon.Movies\FFCG.Leijon.Movies.Core\bin\Debug\FFCG.Leijon.Movies.Core.dll
-C:\Users\eric.leijonmarck\dev\work\FFCG.Leijon.Movies\FFCG.Leijon.Movies.Core\bin\Debug\FFCG.Leijon.Movies.Core.pdb
-C:\Users\eric.leijonmarck\dev\work\FFCG.Leijon.Movies\FFCG.Leijon.Movies.Core\bin\Debug\Newtonsoft.Json.dll
-C:\Users\eric.leijonmarck\dev\work\FFCG.Leijon.Movies\FFCG.Leijon.Movies.Core\bin\Debug\Newtonsoft.Json.xml
-C:\Users\eric.leijonmarck\dev\work\FFCG.Leijon.Movies\FFCG.Leijon.Movies.Core\obj\Debug\FFCG.Leijon.Movies.Core.dll
-C:\Users\eric.leijonmarck\dev\work\FFCG.Leijon.Movies\FFCG.Leijon.Movies.Core\obj\Debug\FFCG.Leijon.Movies.Core.pdb
