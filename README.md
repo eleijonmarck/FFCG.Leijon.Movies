@@ -1,11 +1,9 @@
 # FFCG.Leijon.Movies
 <img align="right" class="img-responsive" src="mce7_lg.jpg">
 
-Composable.Monolithic is a framework for [Composability](https://en.wikipedia.org/wiki/Composability) in Software Development available for .NET.
+Movies is a framework used for **Azure-Big-Data-Analytics-React-To-Angular-Agiling-In-Buzziniesss-Development-With-Consent-To-Upppper-Management** available for .NET.
 
 Current version is 1.0, released in 2014.
-
-[TOC]
 
 ## Overview
 * [Use Case](doc/md/usage.md) — Overview of the projects use case and why it's being done.
@@ -22,11 +20,8 @@ Current version is 1.0, released in 2014.
 
 Here we can list related projects and resources to this project.
 
-* [Developers Guide for new Recruits at Manpower](http://devteam-wiki.mpsedev.local/) - Need to have account to get into the link
-
 ## Tool Stack
- * [Balsamic](https://balsamiq.com/) - Sketching up wireframes
- * [Resharper](https://www.jetbrains.com/resharper/?gclid=CNzVhbjPtcoCFWXecgod_0wGWQ&gclsrc=aw.ds) - Tool for Visual Studio to help with development
+* [Balsamic](https://balsamiq.com/) - Sketching up wireframes
 
 ## Tech Stack
 
