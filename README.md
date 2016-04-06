@@ -1,9 +1,10 @@
 # FFCG.Leijon.Movies
-<img align="right" class="img-responsive" src="mce7_lg.jpg">
+<img src="mce7_lg.jpg" alt="Mountain View" style="width:304px;height:228px;">
 
 Movies is a framework used for **Azure-Big-Data-Analytics-React-To-Angular-Agiling-In-Buzziniesss-Development-With-Consent-To-Upppper-Management** available for .NET.
 
-Current version is 1.0, released in 2014.
+Current version is 0.24, released in 2024.
+
 
 ## Overview
 * [Use Case](doc/md/usage.md) — Overview of the projects use case and why it's being done.
